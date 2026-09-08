@@ -10,7 +10,7 @@ public class Impulse : MonoBehaviour
     void Start()
     {
         //Getting rigidbody from gameobject
-        Rigidbody body = GetComponent<Rigidbody>();
+        Rigidbody rigidBody = GetComponent<Rigidbody>();
 
         //Maximum amount of torque that can be applied
         float torqueRange = 20.0f;
@@ -19,8 +19,8 @@ public class Impulse : MonoBehaviour
         torqueRange = (Random.value * 2.0f - 1.0f) * torqueRange;
 
         //Applying forces/torques to rigidbody
-        body.AddForce(new Vector3(0.0f, impulse, 0.0f));
-        body.AddTorque(new Vector3(torqueRange, torqueRange, torqueRange));
+        rigidBody.AddForce(new Vector3(0.0f, impulse, 0.0f));
+        rigidBody.AddTorque(new Vector3(torqueRange, torqueRange, torqueRange));
     }
 
     // Update is called once per frame
