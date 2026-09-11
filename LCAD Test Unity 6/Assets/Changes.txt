@@ -1,0 +1,10 @@
+Added plane with grid texture and collision
+
+Added three cubes, each of which had their material adjusted, added a rigid body, and physics material
+
+Created script for each cube called impuse with applies a force upon running the scene
+
+Created script for each cube called velocity scale which scales the cube in the direction in which they are traveling
+in to give a slight streched affect
+
+Added in reflection probe with box projection
